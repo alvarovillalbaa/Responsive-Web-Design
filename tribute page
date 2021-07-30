@@ -1,0 +1,64 @@
+<main id="main">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <h1 id="title">Dr. Michael J. Burry</h1>
+  <h5>American doctor, ex-neurologist and hedge fund manager</h5>
+  <div id="img-div">
+    <img id="img" src="https://s03.s3c.es/imag/_v0/770x420/6/9/c/michael-burry-770.png" alt="Michael J.Burry standing next to his office desk">
+    <p id="img-caption">Burry stands in his office where he managed to be the first one to implement a CDS into his fund portfolio.
+    This instrument helped him to be one of the most successful investors during the 2008 housing market crash.</p>
+  </div>
+  
+  <section id="tribute-info">
+    <h3 id="info-header">A time-line through Burry's life:</h3>
+    <ul>
+      <li><strong>1971</strong>: born in San José, California.</li>
+      <li><strong>1973</strong>: at the age of two he lost his left eye to restoblastoma which forced him to have an artifical eye since then.</li>
+      <li><strong>1992</strong>: graduated in med-school he started as a resident in the Hospital of Stanford. He had already been showing his interests in investing while he was studying. He studied economics by looking at historically famous investors such as Benjamin Graham.</li>
+      <li><strong>1996</strong>: he became notorious in the investment field after picking value stocks through his own hedge fund and writing about them on <italic>Silicon Investor</italic>. This brought the attention from well-known hedge funds like Vanguard.</li>
+      <li><strong>2000</strong>: founded Scion Capital with inheritance and family loans money.</li>
+      <li><strong>2001</strong>: achieved a 55% yield return by shorting over-valued tech stocks at the peak of the internet bubble.</li>
+      <li><strong>2008</strong>: once the housing market bubble bursted, he managed to achieve 489% yield return since he started his fund in 2000. He deeply started studying the housing market in 2003 and discovered the growing default rates. He began shorting the housing market in 2005 by an instrument that banks specially created for him: CDS. His net initial position was 1.3B short on the subprime market. Once it the crash occurred, he decided to close Scion Capital in those time of poverty.</li>
+      <li><strong>2013</strong>: he re-opened his hedge fund renamed as Scion Management Association. It was focused on water and farm land.</li>
+      <li><strong>2015</strong>: starred a premiered movie called 'The Big Short'.</li>
+      <li><strong>2020</strong>: announced our actual state of hyperinflation and his short position on Tesla through put options.</li>
+    </ul>
+    <blockquote cite="https://graciousquotes.com/michael-burry/">
+      <p>Investors should own a concentrated portfolio of high-quality businesses that can deliver strong organic growth even if the economy falters.</p>
+      <cite>-Dr. Michael J.Burry</cite>
+    </blockquote>
+    <footer>If you found this Tribute interesting, you can <a href="https://es.wikipedia.org/wiki/Michael_Burry" id="tribute-link" target="_blank">click here for more information</a>.</footer>
+     
+     html {
+  /*setting a base font to equal to 1em*/
+  font-size: 15px;
+  font-family: "roboto";
+  line-height: 1.5em;
+}
+h1, h3, h5, cite, footer, div {
+  text-align: center;
+}
+main {
+  background-color: #D4D4D4;
+  margin: 0px 0px 0px 0px;
+}
+div {
+  background-color: white;
+  padding: 1em;
+  margin: 0;
+}
+#img {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+a {
+  color: black;
+}
+a:hover {
+  color: dark grey;
+}
+footer {
+  margin-bottom: 2em;
+}
