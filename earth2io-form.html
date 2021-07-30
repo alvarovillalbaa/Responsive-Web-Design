@@ -1,0 +1,216 @@
+<main>
+  <div id="container"> <!-- Para poner una foto de fondo que cubra la pantalla entera mientras la form sea translucida-->
+  <header>
+    <h1 id="title">Earth 2 Jewels Study</h1>
+    <h5 id="description"><italic>Many updates are coming! Thank you for taking your time to helping us.</italic></h5>
+  </header>
+  </div>
+  <form id="survey-form">
+    <div id="form-group"> 
+      <label id="name-label" for="username">Username</label>
+      <input type="text"
+             name="username"
+             id="username"
+             placeholder="Enter your username"
+             required>
+    </div>
+    <div id="form-group"> 
+      <label id="email-label" for="email">Email</label>
+      <input type="text"
+             name="email"
+             id="email"
+             placeholder="Enter your mail"
+             required>
+    </div>
+    <div id="form-group"> 
+      <label id="number-label" for="number">How many properties do you have?</label>
+      <input type="number"
+             name="properties"
+             id="number"
+             placeholder="No.Properties"
+             min="0"
+             required/>
+    </div>
+      <div id="form-group"> 
+      <label id="number-label" for="number">How many tiles do you have?</label>
+      <input type="number"
+             name="tiles"
+             id="number"
+             placeholder="No.Tiles"
+             min="0"
+             required/>
+    </div>
+      <div id="form-group"> 
+      <label id="number-label" for="number">How many Jewels could you claim?</label>
+      <input type="number"
+             name="jewels"
+             id="number"
+             placeholder="No.Jewels"
+             max="5000"
+             min="0"
+             required/>
+    </div>
+     <div id="form-group"> 
+       <p>How long ago did you join Earth 2?</p>
+      <select id="dropdown" name="" class="" required>
+        <option>Select months</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+       </select>
+    </div>
+     <div id="form-group"> 
+       <p>What do you like most from Earth 2?</p>
+       <label>
+      <input type="radio"
+             name="most-like"
+             value="community"
+             class="input-radio"
+             checked
+             >Earth 2 Community</label>
+       <label>
+         <input type="radio"
+             name="most-like"
+             value="passive"
+             class="input-radio"
+             >Passive Income(Jewels,LIT)</label>
+       <label>
+          <input type="radio"
+             name="most-like"
+             value="team"
+             class="input-radio"
+                 >E2 Team
+             </label>
+       <label>
+          <input type="radio"
+             name="most-like"
+             value="nfts"
+             class="input-radio"
+                 >NFTs on WAX
+             </label>
+       
+       <label>
+         <input type="radio"
+             name="most-like"
+             value="creators"
+             class="input-radio"
+             >Content Creators
+             </label>
+    </div>
+     <div id="form-group"> 
+      <p>What would you like to see improved?<span class="tip">(Check all that apply)</p>
+       <label>
+      <input type="checkbox"
+             name="improved"
+             id="input-checkbox"
+             >E2 Team Communication</label>
+       <label>
+      <input type="checkbox"
+             name="improved"
+             id="input-checkbox"
+             >Faster Updates</label>
+       <label>
+      <input type="checkbox"
+             name="improved"
+             id="input-checkbox"
+             >More Jewels Yielded</label>
+       <label>
+      <input type="checkbox"
+             name="improved"
+             id="input-checkbox"
+             >Filtered Marketplace</label>
+       <label>
+      <input type="checkbox"
+             name="improved"
+             id="input-checkbox"
+             >Webpage Design</label>
+       <label>
+      <input type="checkbox"
+             name="improved"
+             id="input-checkbox"
+             >Lower Transaction Fees</label>
+        </div>
+        <div class="form-group">
+      <p>Any comments or suggestions?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+     
+       </div>
+        </form>
+    </main>
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+  
+  :root {
+    --color-green: rgba(53, 171, 130, 0.5);
+    --color-white: #FFFFFF;
+    --color-grey: #BCBCBC;
+    
+}
+main {
+  text-align: center;
+  font-family: 'PT Sans', sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-indez: -1;
+  background-image: linear-gradient(
+      115deg,
+      rgba(193, 193, 193, 0.8),
+      rgba(205, 205, 205, 0.5)
+    ), url(https://s3-eu-west-1.amazonaws.com/tpd/logos/5fdc7991dbee30000157f8f0/0x0.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;}
+  
+#survey-form {
+  background-color: var(--color-green);
+  z-index: 0;
+  margin: 0px 15px 0px 15px;
+  padding: 0px 5px 0px 5px;
+  color: white;
+}
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background: var(--color-green);
+  color: white;
+  border-radius: 0px;
+  cursor: pointer;
+}
+#comments {
+  width: 100%;
+  text-align: center;
+  min-height: 100px;
+}
+p, #number-label, #name-label, #email-label {
+  font-size: 1.2em;
+}
+.tip {
+  font-size: 0.7em;
+}
+.input-radio, .input-checkbox {
+  display: inline-block;
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem
+}
