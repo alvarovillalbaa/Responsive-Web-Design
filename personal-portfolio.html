@@ -1,0 +1,202 @@
+<main>
+  <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+        crossorigin="anonymous"
+        />
+  <nav id="navbar" class="nav">
+    <ul class="nav-list">
+      <li>
+        <a href="#welcome-section">About</a>
+      </li>
+      <li>
+        <a href="#projects">Work</a>
+      </li>
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
+
+  <section id="welcome-section">
+    <h1>My name is Álvaro</h1>
+    <p>and this is my personal portfolio</p>
+  </section>
+  
+  <section id="projects">
+    <h4><u>These are some of my projects</u></h4>
+    <div class="projects-grid">
+      <a href="https://codepen.io/alvarovillalbaa/details/BaRmjxd" target="_blank" class="project-tile">
+        <img class="project-image" src="https://lh3.googleusercontent.com/6sxpeKQe6gFr9eH2e2ickemc5pCAxJFS1EimO7SzZQRolVo8wAEAZbBXuN-PNvLhfuAr3ebIfhZA_HafEDqV3u2HGK2zqsNSTYuf8bzBLZdiX2EtHAalB9JR4jtLEjqvneSz6BnF=w2400" alt="project" />
+        <p class="project-title"><span class="code">&lt;</span>
+          Tribute Page<span class="code">&#47;&gt;</span></p>
+      </a>
+      <a href="https://codepen.io/alvarovillalbaa/pen/poPdEPL" target="_blank" class="project-tile">
+        <img class="project-image" src="https://lh3.googleusercontent.com/ehTmv2mK-ZP6z1AapAT6C4SXGWQ39K_RaX3W7gx6Gnk7R5DpXVzW_VQB8CNSKn3owgDe9xRfhW5HiNQ1lnszC4TOMfoNKLfIV3AO5aeRGFE_qn9Zc9uxkookLY51Ze8M2GXJsLjq=w2400" alt="project" />
+        <p class="project-title"><span class="code">&lt;</span>
+          Form Page<span class="code">&#47;&gt;</span></p>
+      </a>
+      <a href="https://codepen.io/alvarovillalbaa/pen/LYyeQzN" target="_blank" class="project-tile">
+        <img class="project-image" src="https://lh3.googleusercontent.com/xDiDi7V0e9e6NNAEg-XhY5ETBh3p951_am0h8qzhvPTJf8qKjPq-JOGkkfPbsZ_8mE_mPdlmu7hliCYN8h3crX8th4HG-pcaBnSIIcbSqGavcdNGs44VNoI0kG2TH9hNqujqKUTR=w2400" alt="project" />
+        <p class="project-title"><span class="code">&lt;</span>
+          Product Page<span class="code">&#47;&gt;</span></p>
+      </a>
+      <a href="https://codepen.io/alvarovillalbaa/pen/wvdpmLB" target="_blank" class="project-tile">
+        <img class="project-image" src="https://lh3.googleusercontent.com/F-cb0bkqckwoCws3N8NoQv7hDGzaVrc-okLAEkOgdeszberldN5AJch_OAUZjwbj_qvJc6L5fXowsBZlnFQZXY5ftM4VCkHlcjH8rcPXZOX0yLfk5aWwkPu6zkc_a4SV5qK1p2Fu=w2400" alt="project" />
+        <p class="project-title"><span class="code">&lt;</span>
+          Documentation Page<span class="code">&#47;&gt;</span></p>
+      </a>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <div class="contact-section-header">
+      <h2>Do you have any questions?</h2>
+      <p><i>Do not hesitate to ask!</i></p>
+    </div>
+    <div class="contact-links">
+      <a id="profile-link" href="https://gist.github.com/alvarovillalbaa" target="_blank" class="btn contact-details"><i class="fab fa-github"></i> GitHub</a>
+      <a href="" target="_blank" class="btn contact-details"><i class="fab fa-twitter"></i> Twitter</a>
+      <a href="mailto:alvaro.villalbaperez@icloud.com" class="btn contact-details"><i class="far fa-envelope"></i> Send a mail</a>
+    </div>
+    </section>
+    <footer>
+      <p>
+        &copy; Created by Álvaro
+      </p>
+    </footer>
+</main>
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+:root {
+  --color-blue: #6BA3C0;
+  --color-darkblue: #005E8F;
+  --color-greyishblue: #8399A4;
+  
+}
+main {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+}
+.nav {
+  justify-content: flex-end;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  background-color: #1F2B67;
+  width: 100%;
+  font-size: 20px;
+}
+#welcome-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #616CCE;
+}
+.nav-list a:hover {
+  background-color: #7C7C7C;
+}
+a {
+  text-decoration: none;
+}
+
+.nav-list a {
+  display: block;
+  padding: 30px;
+  
+  color: white;
+}
+#welcome-section p {
+  color: #1F2B67;
+  font-size: 20px;
+  font-weight: bolder;
+}
+h1 {
+  color: white;
+  font-size: 45px;
+}
+h4 {
+  color: white;
+  font-size: 30px;
+  margin: 0px;
+  padding: 40px;
+}
+#contact {
+  background-color: #DBDBDB;
+  color: #1F2B67;
+  border-radius: 5px;
+  padding: 15px;
+}
+#projects {
+  background-color: #1F2B67;
+}
+#projects a {
+  color: white;
+  margin: 35px;
+}
+.contact-details:hover {
+  transform: translateY(10px);
+}
+.contact-details {
+  margin: 25px;
+  color: #1F2B67;
+}
+.contact-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: #1F2B67;
+  font-size: 25px;
+  
+}
+footer {
+  border: 2px solid;
+  border-color: #1F2B67;
+}
+.project-image {
+  width: 100%;
+  margin: 0px;
+  height: auto;
+}
+.projects-grid {
+  display: grid;
+  
+  grid-gap: 0px;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  grid-radius: 5px;
+}
+.project-title {
+  font-size: 25px;
+  text-decoration: underline;
+  font-style: italic;
+  background-color: #7C7C7C;
+  border-radius: 5px;
+  height: 80px;
+  padding: 15px;
+  
+}
+.code {
+  color: #7C7C7C;
+  transition: color 0.3s ease-out;
+}
+.project-title:hover .code {
+  color: white;
+}
+#projects {
+  border-radius: 2px;
+}
